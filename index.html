@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS Tasks</title>
+	<style type="text/css">
+	#up {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+	background-color: #2d3092;
+	color: #fff;
+  cursor: pointer;
+  padding: 15px;
+}
+
+#up:hover {
+  background-color: #555;
+}
+</style>
+</head>
+<body onscroll="scroll()">
+	<h1>Task one</h1>
+	<input type="color" name="color" id="color">
+	<button id="change" onclick="changeColor()">Change color</button>
+	<hr>
+	<h1>Task Two</h1>
+	<p>What is JavaScript?</p>
+	<ul>
+		<li class="false">Server Side</li>
+		<li id="true">Client Side</li>
+		<li class="false">Both Side</li>
+		<li class="false"> Fries and Coke</li>
+	</ul>
+	<button id="answer" onclick="answer()">Show Answer</button>
+	<hr>
+	<h1>Task Three</h1>
+	<p>Country</p>
+	<select id="country" onchange="show()">
+		
+		<option value=1 >Jordan</option>
+		<option value=2>USA</option>
+	</select>
+	<div id="city" >
+		<p >city</p>
+		<select >
+			<option>Amman</option>
+			<option>Aqapa</option>
+		</select>
+	</div>
+	<div id="states">
+		<p >State</p>
+		<select >
+			<option>NY</option>
+			<option>newyork</option>
+		</select>
+		<p >Zip code</p>
+		<select >
+			<option>1</option>
+			<option>2</option>
+		</select>
+	</div>
+	<hr>
+	<h1>Task Four</h1>
+	<input type="text" name="" value=" " id="result" placeholder="result"><br><br>
+	<label>First Number:</label><input type="number" name="" id="first" value=" " placeholder="firstnumber"><br>
+	<label>Second Number:</label><input type="number" name="" id="second" value=" " placeholder="secondnumber"><br><br>
+	<button id="reset" onclick="reset()">C</button><br><br>
+	<button id="sum" onclick="sum()">+</button>
+	<button id="sub" onclick="sub()">-</button><br><br>
+	<button id="mult" onclick="mult()">X</button>
+	<button id="divi" onclick="divi()">/</button>
+	
+	<hr>
+	<h1>Task Five</h1>
+	<form>
+		<label>Eamil:</label><input type="text" name="text" id="mail" placeholder="Email"> <span id="mailspan" style=" color: red"></span> <br><br>
+
+		<label>Password:</label><input type="password" name="pass" placeholder="Password" id="pass"><span id="passp" style=" color: red"></span><br><br>
+
+		<label>retype Password:</label><input type="password" name="repass" placeholder="RePassword" id="repass"><span id="respan" style=" color: red"></span><br><br>
+
+		<label>Number:</label><input type="text" name="number" id="num" placeholder="Number"><span id="numspan" style=" color: red"></span><br><br>
+		<input type="button" value="submit" onclick="validateForm()"> 
+	</form>
+	<hr>
+	<h1>Task Six</h1>
+	
+	<form >
+		<fieldset>
+			<legend><h3>Online Exam</h3></legend>
+			<label>1.Jquery library of JavaScript?</label><br>
+			<label>True</label><input type="radio" name="q1" id="q1correct">
+			<label>False</label><input type="radio" name="q1" id="q1"><br><br>
+
+			<label>2.javaScript is difficult</label><br>
+			<label>True</label><input type="radio" name="q2" id="q2">
+			<label>False</label><input type="radio" name="q2" id="q2correct"><br><br>
+
+			<label>3.bootstrap helps you in your web page</label><br>
+			<label>True</label><input type="radio" name="q3" id="q3correct">
+			<label>False</label><input type="radio" name="q3" id="q3"><br><br>
+
+			<label>4.Amman is the capital of Jordan</label><br>
+			<label>True</label><input type="radio" name="q4" id="q4correct">
+			<label>False</label><input type="radio" name="q4" id="q4"><br><br>
+
+			<label>5.shark is not a fish</label><br>
+			<label>True</label><input type="radio" name="q5" id="q5">
+			<label>False</label><input type="radio" name="q5" id="q5correct"><br><br>
+
+			<button type="submit" onclick="result()">Finish The Exam</button>
+		</fieldset>
+	</form>
+	<!--Back To Top-->
+	<button onclick="up()" id="up" >Top</button>
+	<script src="tasks.js"></script>
+</body>
+</html>
